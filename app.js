@@ -2,7 +2,7 @@
 const { prompt } = require('inquirer');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-const writeToFile = require('./createFile');
+const writeToFile = require('./utils/createFile');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
@@ -101,7 +101,7 @@ const promptProject = () => {
             type: 'list',
             name: 'license',
             message: "What license, if any, were used for this project?",
-            choices: ['licenseOne', "licenseTwo", "licenseThree", "licenseFour", "none"],
+            choices: ['Apache License 2.0', "MIT License", "GNU General Public License v3.0", "BSD 2-Clause 'Simplified' License", "BSD 3-Clause 'New' or 'Revised' License", "Boost Software License", "Creative Commons Zero v1.0 Universal", "None"],
         },
         //HOW TO CONTRIBUTE
         {
@@ -115,7 +115,46 @@ const promptProject = () => {
                     console.log("Please inform other developers how they can contribute to your project!")
                 }
             }
+        },
+        //TESTS
+        {
+            type: 'input',
+            name: 'test',
+            message: "Please provide testing instruction for this application?",
+            validate: test => {
+                if (test) {
+                    return true;
+                } else {
+                    console.log("Please inform other developers how they test this application!")
+                }
+            }
+        },
+        // QUESTIONS
+        {
+            type: 'input',
+            name: 'github',
+            message: "Please provide your GitHub username.",
+            validate: github => {
+                if (github) {
+                    return true;
+                } else {
+                    console.log("Please provide your GitHub username!")
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "Please provide your email address",
+            validate: email => {
+                if (email) {
+                    return true;
+                } else {
+                    console.log("Please provide your email address!")
+                }
+            }
         }
+
     ])
 }
 
