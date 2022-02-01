@@ -24,21 +24,28 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "Apache License 2.0") {
-    return "The 2.0 version of the Apache License, approved by the ASF in 2004, helps us achieve our goal of providing reliable and long-lived software products through collaborative, open-source software development."
+    return `## License 
+    The 2.0 version of the Apache License, approved by the ASF in 2004, helps us achieve our goal of providing reliable and long-lived software products through collaborative, open-source software development.`
   } else if (license === "MIT License") {
-    return "The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility."
+    return `## License
+    The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.`
   } else if (license === "GNU General Public License v3.0") {
-    return "The GNU General Public License is a series of widely used free software licenses that guarantee end users the four freedoms to run, study, share, and modify the software."
+    return `## License
+    The GNU General Public License is a series of widely used free software licenses that guarantee end users the four freedoms to run, study, share, and modify the software.`
   } else if (license === "BSD 2-Clause 'Simplified' License") {
-    return "This license has also been called the 'Simplified BSD License' and the 'FreeBSD License'."
+    return `## License
+    This license has also been called the 'Simplified BSD License' and the 'FreeBSD License'.`
   } else if (license === "BSD 3-Clause 'New' or 'Revised' License") {
-    return "This license has also been called the 'New BSD License' or 'Modified BSD License'."
+    return `## License
+    This license has also been called the 'New BSD License' or 'Modified BSD License'.`
   } else if (license === "Boost Software License") {
-    return "The Boost Software License specifies the terms and conditions of use for all Boost libraries and tools."
+    return `## License
+    The Boost Software License specifies the terms and conditions of use for all Boost libraries and tools.`
   } else if (license === "Creative Commons Zero v1.0 Universal") {
-    return "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law."
+    return `## License
+    The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.`
   } else if (license === "None") {
-    return '- None'
+    return ''
   }
 }
 
@@ -69,7 +76,6 @@ function generateMarkdown(projectData) {
   ## Usage
   - ${projectData.use}
 
-  ## License
   ${renderLicenseLink(projectData.license)}
 
   ## Contributing
