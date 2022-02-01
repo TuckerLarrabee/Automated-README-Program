@@ -2,6 +2,8 @@
 const { prompt } = require('inquirer');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
+const writeToFile = require('./createFile');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const promptProject = () => {
@@ -141,17 +143,20 @@ const promptProject = () => {
 
 
 //TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+// function writeToFile(fileName, data) { }
 
-// TODO: Create a function to initialize app
-function init() { }
+// // TODO: Create a function to initialize app
+// function init() { }
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
 
 promptProject()
     .then(data => {
         console.log(data)
         return generateMarkdown(data)
+    })
+    .then(READMEdata => {
+        writeToFile(READMEdata)
     })
 
