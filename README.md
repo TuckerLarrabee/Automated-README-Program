@@ -27,5 +27,9 @@ SO THAT I can quickly create a professional README for a new project
 - WHEN I click on the links in the Table of Contents
 - THEN I am taken to the corresponding section of the README
 
-https://user-images.githubusercontent.com/94421867/152654030-341c2420-ef52-4aa8-8ba2-deea8adf9087.mp4
+
+
+https://user-images.githubusercontent.com/94421867/152654358-79824eaf-5675-49c4-a018-dc7d708a4cc8.MP4
+
+
 
