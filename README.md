@@ -31,8 +31,4 @@ SO THAT I can quickly create a professional README for a new project
 
 https://user-images.githubusercontent.com/94421867/152654358-79824eaf-5675-49c4-a018-dc7d708a4cc8.MP4
 
-
-
-[README.md](https://github.com/TuckerLarrabee/Automated-README-Program/files/8008634/README.md)
-
-
+README.md
