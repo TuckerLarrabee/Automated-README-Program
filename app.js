@@ -158,38 +158,6 @@ const promptProject = () => {
     ])
 }
 
-// const promptInstallation = () => {
-//     console.log(`
-//   =================
-//   Add Installation Instructions
-//   =================
-// `);
-//     return inquirer.prompt([
-//         {
-//             type: 'input',
-//             name: 'learn',
-//             message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
-//             validate: install => {
-//                 if (install) {
-//                     return true;
-//                 } else {
-//                     console.log("Please enter step-by-step installation instructions!")
-//                 }
-//             }
-//         }
-//     ])
-// }
-
-
-//TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
-
-// // TODO: Create a function to initialize app
-// function init() { }
-
-// // Function call to initialize app
-// init();
-
 promptProject()
     .then(data => {
         console.log(data)
