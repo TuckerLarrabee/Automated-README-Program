@@ -1,13 +1,13 @@
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-  # d
+  # Project Title
 
   ## Description
-  - d
-  - d
-  - d
-  - d
+  - Motivation
+  - Build
+  - Solution
+  - Node
 
   ## TABLE OF CONTENTS 
   - [Installation](#installation)
@@ -16,20 +16,20 @@
   - [Questions](#questions)
 
   ## Installation
-  - d
+  - Install Node
 
   ## Usage
-  - d
+  - Testing
 
   ## License
-    The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.
+    The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.
 
   ## Contributing
-  - r
+  - They cannot. They may fork it though.
 
   ## Tests
-  - f
+  - Command Prompts
 
   ## Questions
-  - GitHub profile: github.com/d
-  - If you have any additional questions, please send an email to following: f
+  - GitHub profile: github.com/tuckerlarrabee
+  - If you have any additional questions, please send an email to following: tuckerlarrabee13@gmail.com
